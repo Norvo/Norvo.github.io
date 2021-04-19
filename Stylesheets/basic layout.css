@@ -73,8 +73,10 @@ header {
  }
             nav a:hover {
                 text-decoration: underline;
+ }
+            .actual {
+                text-decoration: underline;
 }
-
 
 
 /* HLAVNÁ ČASŤ STRÁNKY */
