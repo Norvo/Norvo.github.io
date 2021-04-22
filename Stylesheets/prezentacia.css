@@ -1,0 +1,23 @@
+.presentation {
+    border: black 0.2em solid;
+    background:lightgrey;
+}
+.left-button, .right-button {
+    border: black 2px solid;
+    border-bottom: none;
+}
+.left-button {
+    width: 49%;
+    height: 2em;
+    border-left: none;
+}
+.right-button {
+    width: 49%;
+    height: 2em;
+    float: right;
+    border-right: none;
+}
+
+.left-button:hover, .right-button:hover {
+    background: rgb(185, 185, 185);
+}
