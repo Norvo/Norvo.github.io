@@ -44,3 +44,10 @@ h3 {
     margin-right: 0;
     line-height: 0;
 }
+
+.sipka:link {
+    color: black;
+}
+.sipka:visited {
+    color: black;
+}
