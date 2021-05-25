@@ -1,6 +1,16 @@
 .presentation {
-    border: black 0.2em solid;
+    border: black 0.1em solid;
     background:blanchedalmond;
+}
+@media only screen and (min-width: 1100px){
+    .presentation {
+        max-width: 80%;
+        max-height: 590px;
+        margin: auto;
+    }
+}
+.animated {
+    border: black 0.1em solid;
 }
 .left-button, .right-button {
     border: black 2px solid;
