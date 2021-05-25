@@ -1,17 +1,19 @@
 .presentation {
     border: black 0.2em solid;
-    background:lightgrey;
+    background:blanchedalmond;
 }
 .left-button, .right-button {
     border: black 2px solid;
     border-bottom: none;
 }
 .left-button {
+    background-color: rgb(215, 195, 165);
     width: 49%;
     height: 2em;
     border-left: none;
 }
 .right-button {
+    background-color: rgb(215, 195, 165);
     width: 49%;
     height: 2em;
     float: right;

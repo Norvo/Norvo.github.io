@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     height: 100%;
     min-height: 100%;
+    background-color: blanchedalmond;
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -11,9 +12,13 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     text-align: center;
     font-weight: bold;
-    border-bottom: black 0.1em solid;
+    border-bottom: blanchedalmond 0.1em solid;
     padding-bottom: 0.1em;
     margin: 0 1em 0.5em 1em;
+}
+
+main h1 {
+    border-bottom: black 0.1em solid;
 }
 p, address{
     text-align: justify;
@@ -33,8 +38,11 @@ p, address{
 
 /* ZÁHLAVIE */
 header {
-    background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-image: url(../obrázky/Dark-wood-background.jpg);
+    background-size: cover;
     flex: none;
+    color: blanchedalmond;
  }
 
 
@@ -65,7 +73,7 @@ header {
 /* NAVIGÁCIA */
     nav ul {
         text-align: center;
-        border-top: black 2px solid;
+        border-top: blanchedalmond 2px solid;
         border-bottom: black 2px solid;
  }
         nav li {
@@ -73,14 +81,14 @@ header {
             font-size: 1.2em;
             padding: 0.3em 1em;
             margin: 0.4em 0;
-            border-right: black 0.1em solid;
+            border-right: blanchedalmond 0.1em solid;
  }
         nav li:first-child {
-            border-left: black 0.1em solid;
+            border-left: blanchedalmond 0.1em solid;
  }
         nav a {
             text-decoration: none;
-            color: black;
+            color:blanchedalmond;
  }
             nav a:hover {
                 text-decoration: underline;
@@ -93,7 +101,8 @@ header {
 /* HLAVNÁ ČASŤ STRÁNKY */
 main {
     flex: auto;
-    background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-color: blanchedalmond;
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -108,11 +117,14 @@ main {
 /* FOOTER */
 footer {
     flex: none;
-    background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-image: url(../obrázky/Dark-wood-background.jpg);
+    background-size: contain;
     width: 100%;
     padding: 1em;
     border-top: black solid 2px;
  }
- footer p, address {
+ footer p, address, footer a {
      font-size: 0.9em;
+     color: blanchedalmond;
 }
