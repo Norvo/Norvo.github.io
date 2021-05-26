@@ -1,0 +1,53 @@
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.work {
+    margin-bottom: 0.5em;
+}
+.content {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.content:visited, .content:link {
+    color: #0000EE;
+    text-decoration: none;
+}
+.content:hover {
+    text-decoration: underline;
+}
+
+#up-button {
+    background: whitesmoke;
+    border: black 2px solid;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    border-radius: 100%;
+}
+
+#sipka {
+    font-size: 30px;
+    margin: 50%;
+    margin-left: 20%;
+    margin-right: 0;
+    line-height: 0;
+}
+
+.sipka:link {
+    color: black;
+}
+.sipka:visited {
+    color: black;
+}
