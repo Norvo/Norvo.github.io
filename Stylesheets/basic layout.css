@@ -120,7 +120,6 @@ footer {
     /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
     background-image: url(../obrázky/Dark-wood-background.jpg);
     background-size: contain;
-    width: 100%;
     padding: 1em;
     border-top: black solid 2px;
  }

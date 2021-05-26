@@ -25,6 +25,7 @@
                     <li><a href="test.html">Test</a></li>
                     <li><a href="praca.html">Práca</a></li>
                     <li><a href="zdroje.html">Zdroje</a></li>
+                    <li><a href="dokumenty.html">Dokumenty</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,8 +35,9 @@
         <main>
             <h1>Prezentácia</h1>
 
-            <p>Tu ste našli moju prezentáciu o mojej ročníkovej práci. Pod ňou sú dve šípky ktorými môžete preklikávať cez všetky snímky.</p>
-
+            <p>Tu môžete vidieť prezentáciu o mojej ročníkovej práci. Pod ňou sú dve šípky ktorými môžete preklikávať cez všetky snímky a štvorček pre zväčšenie snímky na celú obrazovku.</p>
+            
+            <div id="presentation">
             <div class="presentation">
                 <img class="animated animation" src="obrázky/1.png" style="width:100%">
                 <img class="animated animation" src="obrázky/2.png" style="width:100%">
@@ -60,11 +62,16 @@
                 <img class="animated animation" src="obrázky/21.png" style="width:100%">
                 <img class="animated animation" src="obrázky/22.png" style="width:100%">
                 <img class="animated animation" src="obrázky/23.png" style="width:100%">
+                <img class="animated animation" src="obrázky/24.png" style="width:100%">
               
-                <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+                <button id="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button id="right-button" onclick="plusDivs(1)">&#10095;</button>
+                <button id="fullscreen-button" onclick="openFullscreen();"><img src="obrázky/fullscreen.png" alt=""></button>
               </div>
+              </div>
+
               
+              <!-- SLIDESHOW -->
               <script>
               var slideIndex = 1;
               showDivs(slideIndex);
@@ -84,8 +91,23 @@
                 x[slideIndex-1].style.display = "block";  
               }
               </script>
+              
 
-
+              <!-- FULLSCREEN -->
+              <script>
+        
+              var elem = document.getElementById("presentation");
+              function openFullscreen() {
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                  elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                  elem.msRequestFullscreen();
+                }
+              }
+ 
+              </script>
 
         </main>
 
