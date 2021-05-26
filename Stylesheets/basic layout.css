@@ -1,0 +1,129 @@
+/* HLAVNÉ VECI NA CELÚ STRÁNKU */
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    background-color: blanchedalmond;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: blanchedalmond 0.1em solid;
+    padding-bottom: 0.1em;
+    margin: 0 1em 0.5em 1em;
+}
+
+main h1 {
+    border-bottom: black 0.1em solid;
+}
+p, address{
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.obsah {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ZÁHLAVIE */
+header {
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-image: url(../obrázky/Dark-wood-background.jpg);
+    background-size: cover;
+    flex: none;
+    color: blanchedalmond;
+ }
+
+
+
+/* LOGO */
+    #logo {
+        margin: 0 auto;
+        width: 12em;
+        text-align: center;
+    }
+
+        #logo h1 {
+            padding-top: 0.5em;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0.5em 0 0 0;
+ }
+
+        #logo h2 {
+            padding: 0.3em 0;
+            font-size: 1em;
+            font-weight: bold;
+            margin: 0 0 1em 0;
+ }
+
+
+
+/* NAVIGÁCIA */
+    nav ul {
+        text-align: center;
+        border-top: blanchedalmond 2px solid;
+        border-bottom: black 2px solid;
+ }
+        nav li {
+            display: inline-block;
+            font-size: 1.2em;
+            padding: 0.3em 1em;
+            margin: 0.4em 0;
+            border-right: blanchedalmond 0.1em solid;
+ }
+        nav li:first-child {
+            border-left: blanchedalmond 0.1em solid;
+ }
+        nav a {
+            text-decoration: none;
+            color:blanchedalmond;
+ }
+            nav a:hover {
+                text-decoration: underline;
+ }
+            .actual {
+                text-decoration: underline;
+}
+
+
+/* HLAVNÁ ČASŤ STRÁNKY */
+main {
+    flex: auto;
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-color: blanchedalmond;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em 1em;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
+ }
+    section {
+        margin-bottom: 2em;
+}
+
+/* FOOTER */
+footer {
+    flex: none;
+    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
+    background-image: url(../obrázky/Dark-wood-background.jpg);
+    background-size: contain;
+    padding: 1em;
+    border-top: black solid 2px;
+ }
+ footer p, address, footer a {
+     font-size: 0.9em;
+     color: blanchedalmond;
+}

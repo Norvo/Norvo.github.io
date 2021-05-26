@@ -1,0 +1,45 @@
+.presentation {
+    border: black 0.1em solid;
+    background:blanchedalmond;
+}
+/*@media only screen and (min-width: 1100px){
+    .presentation {
+        max-width: 80%;
+        max-height: 590px;
+        margin: auto;
+    }
+}*/
+.animated {
+    border: black 0.1em solid;
+}
+#left-button, #right-button, #fullscreen-button {
+    border: black 2px solid;
+    border-bottom: none;
+}
+#left-button {
+    background-color: rgb(215, 195, 165);
+    width: 40%;
+    height: 2em;
+    border-left: none;
+    float: left;
+}
+#right-button {
+    background-color: rgb(215, 195, 165);
+    width: 40%;
+    height: 2em;
+    border-left: none;
+}
+#fullscreen-button {background-color: rgb(215, 195, 165);
+    width: 15%;
+    height: 2em;
+    border-right: none;
+    float: right;
+}
+#fullscreen-button img {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+#left-button:hover, #right-button:hover, #fullscreen-button:hover{
+    background: rgb(185, 155, 125);
+}
