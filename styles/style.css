@@ -1,0 +1,71 @@
+
+body, html {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center;
+    background-image: url(../images/pattern.jpg);
+    background-size: 200px 200px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.75em;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+#left, #middle, #right {
+    height: 100%;
+    float: left;
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+}
+
+.space {
+    flex: auto;
+    height: auto;
+    display: table;
+}
+.question {
+    display: table-cell;
+    vertical-align: middle;
+    background: rgba(182, 29, 29, 0.8);
+}
+
+.choice {
+    flex: auto;
+    height: auto;
+    border-top:black 5px solid;
+    border-left:black 5px solid;
+    border-right:black 5px solid;
+    display: table;
+    background: rgba(182, 29, 29, 0.8);
+}
+.choice3, .choice6 {
+    border-bottom: black 5px solid;
+}
+
+.choice a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+.choice a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.choice1 {
+    background-image: url(../images/Dark-wood-background.jpg);
+    background-size: cover;
+}
+.choice1 a {
+    color: blanchedalmond;
+}
