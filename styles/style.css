@@ -37,6 +37,7 @@ main {
     display: table-cell;
     vertical-align: middle;
     background: rgba(182, 29, 29, 0.8);
+    padding: 10px;
 }
 
 .choice {
@@ -68,4 +69,24 @@ main {
 }
 .choice1 a {
     color: blanchedalmond;
+}
+@media only screen and (max-width: 715px){
+    h1{font-size: 2em;}
+    h2{font-size: 1.5em;}
+}
+@media only screen and (max-width: 600px){
+    #middle {display: none;}
+    #left {float: left;}
+    #right {float: right;}
+    #left, #right {width: 50%;}
+    .choice{border-left: none;}
+}
+@media only screen and (max-width: 470px){
+    #middle {display: none;}
+    #left {float: left;}
+    #right {float: right;}
+    #left, #right {width: 50%;}
+    .choice{border-left: none;}
+    h1{font-size: 1.5em;}
+    h2{font-size: 1em;}
 }
