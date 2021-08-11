@@ -102,11 +102,27 @@ main {
     color: Black;
     font-size: 2.5em;
  }
+ .choice1 a {
+     background-color: #4754F1;
+     border: 8px solid #2A37DB;
+     color: #EDC314;
+     font-weight: bold;
+ }
  .choice2 {
      float: right;
+     font-family: "ApocalypseRegular";
  }
+ .choice2 a {
+     background-color: #590E07;
+     border: 8px solid #141815;
+     color: #F2EBD5;
+}
 
- @font-face {
-     font-family: "SuperMario256";
-     src: url(../fonts/SuperMario256.ttf);
- }
+@font-face {
+    font-family: "SuperMario256";
+    src: url(../fonts/SuperMario256.ttf);
+}
+@font-face {
+    font-family: "ApocalypseRegular";
+    src: url(../fonts/Apocalypse-Regular.ttf);
+}
