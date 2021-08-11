@@ -43,6 +43,7 @@ main {
 .choice {
     flex: auto;
     height: auto;
+    min-height: 31.2%;
     border-top:black 5px solid;
     border-left:black 5px solid;
     border-right:black 5px solid;
