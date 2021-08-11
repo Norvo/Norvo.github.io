@@ -38,7 +38,6 @@ p, address{
 
 /* ZÁHLAVIE */
 header {
-    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
     background-image: url(../obrázky/Dark-wood-background.jpg);
     background-size: cover;
     flex: none;
@@ -101,7 +100,6 @@ header {
 /* HLAVNÁ ČASŤ STRÁNKY */
 main {
     flex: auto;
-    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
     background-color: blanchedalmond;
     width: 80%;
     height: auto;
@@ -117,7 +115,6 @@ main {
 /* FOOTER */
 footer {
     flex: none;
-    /*background: radial-gradient(circle, white, rgb(230, 230, 230) 85%);*/
     background-image: url(../obrázky/Dark-wood-background.jpg);
     background-size: contain;
     padding: 1em;
