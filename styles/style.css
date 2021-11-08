@@ -7,6 +7,7 @@ body, html {
     text-align: center;
     background-image: url(../images/pattern.jpg);
     background-size: 200px 200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -81,6 +82,14 @@ main {
 }
 .choice2 a {
     color: #999999;
+}
+
+.choice3 {
+    background-image: url(../zvoncek/Pictures/LogoPNG.png);
+    background-color: #b8bff8;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 40%;
 }
 @media only screen and (max-width: 715px){
     h1{font-size: 2em;}
