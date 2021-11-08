@@ -11,6 +11,10 @@
 </head>
 
 <body>
+<?php
+
+$arr = json_decode(file_get_contents("text/jsonmenutext.json"), true);
+?>
     
     <header>
         <img src="Pictures/harebell-146854_960_720.png" alt="" class="logo">
@@ -35,186 +39,186 @@
         <h2>Denné menu</h2>
         <div class="container">
             <div class="header">
-                <h3>45.týždeň</h3>
+                <h3 id="tyzden"><?php echo $arr["tyzden"]?></h3>
             </div>
             <div class="content">
                 <table>
                     <tr>
-                        <td class="day">Pondelok 08.11.2021</td>
+                        <td class="day">Pondelok <span><?php echo $arr["mondate"]?></span></td>
                     </tr>
             
                     <tr>
-                        <td><span class="soup">Polievka:</span> 0,3L Šošovicová s párkom</td>
-                        <td>1</td>
+                        <td><span class="soup">Polievka: </span><span><?php echo $arr["monsoup"]?></span></td>
+                        <td><?php echo $arr["monsoupalergens"]?></td>
                         <td></td>
                     </tr>
             
                     <tr>
-                        <td>120g Kuracie prsia na prírodno, šampiňónová ryža</td>
-                        <td></td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["monfood1"]?></td>
+                        <td><?php echo $arr["monfood1alergens"]?></td>
+                        <td><?php echo $arr["monfood1price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>120g Bravčové kocky v hlávkovej kapuste, varené zemiaky</td>
-                        <td></td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["monfood2"]?></td>
+                        <td><?php echo $arr["monfood2alergens"]?></td>
+                        <td><?php echo $arr["monfood2price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>250g Špagety Carbonara</td>
-                        <td>1,3,7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["monfood3"]?></td>
+                        <td><?php echo $arr["monfood3alergens"]?></td>
+                        <td><?php echo $arr["monfood3price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>300g Lievance s džemom, toping</td>
-                        <td>1,3,7</td>
-                        <td>4,00€</td>
+                    <td><?php echo $arr["monfood4"]?></td>
+                        <td><?php echo $arr["monfood4alergens"]?></td>
+                        <td><?php echo $arr["monfood4price"]?></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td class="day">Utorok 09.11.2021</td>
+                        <td class="day">Utorok <span><?php echo $arr["tuedate"]?></span></td>
                     </tr>
             
                     <tr>
-                        <td><span class="soup">Polievka: </span>0,3L Z fazuľových strukov</td>
-                        <td>7</td>
+                        <td><span class="soup">Polievka: </span><span><?php echo $arr["tuesoup"]?></span></td>
+                        <td><?php echo $arr["tuesoupalergens"]?></td>
                         <td></td>
                     </tr>
             
                     <tr>
-                        <td>220g Zemiaky na kyslo, pečená sekaná, chlieb</td>
-                        <td>1,3,7</td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["tuefood1"]?></td>
+                        <td><?php echo $arr["tuefood1alergens"]?></td>
+                        <td><?php echo $arr["tuefood1price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>120g Kurací perkelt, cestovina</td>
-                        <td>1,3,7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["tuefood2"]?></td>
+                        <td><?php echo $arr["tuefood2alergens"]?></td>
+                        <td><?php echo $arr["tuefood2price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>110g Vyprážaný camembert, varené zemiaky, tatárska omáčka</td>
-                        <td>1,3,7</td>
-                        <td>4,00€</td>
+                        <td><?php echo $arr["tuefood3"]?></td>
+                        <td><?php echo $arr["tuefood3alergens"]?></td>
+                        <td><?php echo $arr["tuefood3price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>350g Pizza šunková s kukuricou Ø 24cm</td>
-                        <td>7</td>
-                        <td>4,70€</td>
+                        <td><?php echo $arr["tuefood4"]?></td>
+                        <td><?php echo $arr["tuefood4alergens"]?></td>
+                        <td><?php echo $arr["tuefood4price"]?></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td class="day">Streda 10.11.2021</td>
+                        <td class="day">Streda <span><?php echo $arr["weddate"]?></span></td>
                     </tr>
             
                     <tr>
-                        <td><span class="soup">Polievka: </span>0,3L Slepačí vývar s mäsom a rezancami</td>
-                        <td>1,3,7,9</td>
+                        <td><span class="soup">Polievka: </span><?php $arr["wedsoup"]?></td>
+                        <td><?php echo $arr["wedsoupalergens"]?></td>
                         <td></td>
                     </tr>
             
                     <tr>
-                        <td>120g Vyprážaný bravčový rezeň, tlačené zemiaky, kyslá uhorka</td>
-                        <td>1,3,7</td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["wedfood1"]?></td>
+                        <td><?php echo $arr["wedfood1alergens"]?></td>
+                        <td><?php echo $arr["wedfood1price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>120g Kuracie soté na zelenine, dusená ryža</td>
-                        <td>7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["wedfood2"]?></td>
+                        <td><?php echo $arr["wedfood2alergens"]?></td>
+                        <td><?php echo $arr["wedfood2price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>300g Miešaný zeleninový šalát s kuracími nugetkami, dresing</td>
-                        <td>1,3,7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["wedfood3"]?></td>
+                        <td><?php echo $arr["wedfood3alergens"]?></td>
+                        <td><?php echo $arr["wedfood3price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>350g Granatiersky pochod, cvikla</td>
-                        <td>1,3,7</td>
-                        <td>4,70€</td>
+                        <td><?php echo $arr["wedfood4"]?></td>
+                        <td><?php echo $arr["wedfood4alergens"]?></td>
+                        <td><?php echo $arr["wedfood4price"]?></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td class="day">Štvrtok 11.11.2021</td>
+                        <td class="day">Štvrtok <span><?php echo $arr["thudate"]?></span></td>
                     </tr>
             
                     <tr>
-                        <td><span class="soup">Polievka: </span>0,3L Boršč</td>
+                        <td><span class="soup">Polievka: </span><?php echo $arr["thusoup"] ?></td>
+                        <td><?php echo $arr["thusoupalergens"] ?></td>
                         <td></td>
-                        <td></td>
                     </tr>
             
                     <tr>
-                        <td>120g Štefánske bravčové karé, tarhoňa</td>
-                        <td>1,3</td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["thufood1"]?></td>
+                        <td><?php echo $arr["thufood1alergens"]?></td>
+                        <td><?php echo $arr["thufood1price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>120g Koložvárska kapusta, cvikla</td>
-                        <td>7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["thufood2"]?></td>
+                        <td><?php echo $arr["thufood2alergens"]?></td>
+                        <td><?php echo $arr["thufood2price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>3ks Palacinky s tvarohovou penou, toping</td>
-                        <td>1,3,7</td>
-                        <td>4,00€</td>
+                        <td><?php echo $arr["thufood3"]?></td>
+                        <td><?php echo $arr["thufood3alergens"]?></td>
+                        <td><?php echo $arr["thufood3price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>350g Pizza salámová s nivou Ø 24cm</td>
-                        <td>1,7</td>
-                        <td>4,70€</td>
+                        <td><?php echo $arr["thufood4"]?></td>
+                        <td><?php echo $arr["thufood4alergens"]?></td>
+                        <td><?php echo $arr["thufood4price"]?></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td class="day">Piatok 12.11.2021</td>
+                        <td class="day">Piatok <span><?php echo $arr["fridate"]?></span></td>
                     </tr>
             
                     <tr>
-                        <td><span class="soup">Polievka: </span>0,3L Brokolicová krémová s krutónmi</td>
-                        <td>1,7</td>
+                        <td><span class="soup">Polievka: </span><?php echo $arr["frisoup"] ?></td>
+                        <td><?php echo $arr["frisoupalergens"] ?></td>
                         <td></td>
                     </tr>
             
                     <tr>
-                        <td>220g Pečené kuracie stehno, dusená ryža, kompót</td>
-                        <td></td>
-                        <td>4,90€</td>
+                        <td><?php echo $arr["frifood1"]?></td>
+                        <td><?php echo $arr["frifood1alergens"]?></td>
+                        <td><?php echo $arr["frifood1price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>280g Vyprážaná syrovo-šampiňónová ihla, varené zemiaky, tatárska omáčka</td>
-                        <td>1,3,7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["frifood2"]?></td>
+                        <td><?php echo $arr["frifood2alergens"]?></td>
+                        <td><?php echo $arr["frifood2price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>120g Rybie filé na masle, varené zemiaky, kyslá uhorka</td>
-                        <td>1,3,7</td>
-                        <td>4,50€</td>
+                        <td><?php echo $arr["frifood3"]?></td>
+                        <td><?php echo $arr["frifood3alergens"]?></td>
+                        <td><?php echo $arr["frifood3price"]?></td>
                     </tr>
             
                     <tr>
-                        <td>350g Rezance s makom a preliate maslom</td>
-                        <td>1,3,7</td>
-                        <td>4,70€</td>
+                        <td><?php echo $arr["frifood4"]?></td>
+                        <td><?php echo $arr["frifood4alergens"]?></td>
+                        <td><?php echo $arr["frifood4price"]?></td>
                     </tr>
                 </table>
                 
