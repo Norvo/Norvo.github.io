@@ -229,14 +229,14 @@
             <h2>Ponuka</h2>
             <div class="ponuka">
                 <div class="ponukaheader">
-                    <button id="pizzabutton" onclick="">Pizza</button>
-                    <button id="pochutinybutton" onclick="">Pochutiny</button>
-                    <button id="jedlobutton" onclick="">Jedlá</button>
-                    <button id="prilohybutton" onclick="">Prílohy</button>
+                    <button id="pizzabutton" onclick="showDivs(1)">Pizza</button>
+                    <button id="pochutinybutton" onclick="showDivs(2)">Pochutiny</button>
+                    <button id="jedlobutton" onclick="showDivs(3)">Jedlá</button>
+                    <button id="prilohybutton" onclick="showDivs(4)">Prílohy</button>
                 </div>
                 <div class="ponukaheaderunderline"></div>
                 <div class="ponukamain">
-                    <div id="pizza">
+                    <div id="pizza" class="foodmenu">
                         <h2>Pizza</h2>
                         <div>
                             <div class="pizza">
@@ -310,7 +310,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="pochutiny">
+                    <div id="pochutiny" class="foodmenu">
                         <h2>Pochutiny</h2>
                         <table class="dve">
                             <tr>
@@ -380,7 +380,7 @@
                         </table>
 
                     </div>
-                    <div id="jedlo">
+                    <div id="jedlo" class="foodmenu">
                         <h2>Mäsité a bezmäsité jedlá</h2>
                         <table>
                             <tr>
@@ -481,7 +481,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div id="prilohy">
+                    <div id="prilohy" class="foodmenu">
                         <h2>Prílohy</h2>
                         <table>
                             <tr>
@@ -562,6 +562,18 @@
             {
               x.className = "topnav";
             }
+            }
+
+            var a = 1;
+            showDivs(a);
+
+            function showDivs(n) {
+                n = n-1
+                x = document.getElementsByClassName("foodmenu");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                  x[n].style.display = "block";  
+                }
             }
     </script>
 
